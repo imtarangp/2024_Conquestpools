@@ -9,7 +9,7 @@ using Microsoft.OpenApi.Models;
 namespace ConquestWebPortal
 {
     public class Startup
-    { 
+    {
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,7 +26,7 @@ namespace ConquestWebPortal
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
-            services.AddControllers(); 
+            services.AddControllers();
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",

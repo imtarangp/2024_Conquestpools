@@ -1,12 +1,10 @@
-﻿using DAL.DataContext;
+﻿using DAL.ADOService;
+using DAL.DataContext;
 using DAL.RequestDTO;
 using Dtos.Model;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 using System.Collections.Generic;
-using DAL.ADOService;
-using Newtonsoft.Json;
-using System.Linq;
+using System.Threading.Tasks;
 
 namespace BLL
 {
@@ -50,7 +48,7 @@ namespace BLL
         {
             using (var _context = DB.Create())
             {
-                if (req.OrderID>0)
+                if (req.OrderID > 0)
                 {
                     var pQ = BuilQP("SP_UpdateOrderManufacturingTbl", new List<ProcParams> {
                         new ProcParams{Name = "@OrderID", Val = req.OrderID }

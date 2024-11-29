@@ -13,8 +13,8 @@ namespace DAL.GenericModel
         [Required]
         public int CreatedBy { get; set; }
         [Required]
-        public DateTime CreatedDate { get; set; }      
-        public int? Editby { get; set; }       
+        public DateTime CreatedDate { get; set; }
+        public int? Editby { get; set; }
         public DateTime? EditDate { get; set; }
     }
 }

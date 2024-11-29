@@ -1,11 +1,8 @@
 ﻿using CoreLibrary;
 using DAL;
-using DAL.DataContext;
-using DAL.Entities;
 using DAL.RequestDTO;
 using DAL.ViewModel.Token;
 using Dtos.Model;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;

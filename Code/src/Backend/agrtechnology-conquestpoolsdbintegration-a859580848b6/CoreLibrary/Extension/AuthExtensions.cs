@@ -14,7 +14,7 @@ namespace CoreLibrary.Extension
                 UserId = Convert.ToInt32(((ClaimsIdentity)identity).FindFirst("UserId").Value),
                 UserName = ((ClaimsIdentity)identity).FindFirst("UserName").Value,
                 Dealer = ((ClaimsIdentity)identity).FindFirst("Dealer").Value,
-                EmployeeName= ((ClaimsIdentity)identity).FindFirst("EmployeeName").Value
+                EmployeeName = ((ClaimsIdentity)identity).FindFirst("EmployeeName").Value
             };
             return LoggedInUser;
         }

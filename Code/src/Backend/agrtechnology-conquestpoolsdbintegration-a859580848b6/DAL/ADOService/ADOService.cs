@@ -1,5 +1,5 @@
 ﻿using CoreLibrary;
-using Newtonsoft.Json;
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -65,7 +65,7 @@ namespace DAL.ADOService
         {
             using (SqlConnection connection = new SqlConnection(Setting.ConnectionString))
             {
-               await connection.OpenAsync();
+                await connection.OpenAsync();
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
@@ -73,7 +73,7 @@ namespace DAL.ADOService
                     command.CommandText = procName.Split("@")[0].Replace("Exec ", "");
                     command.Parameters.AddRange(procParams);
                     await command.ExecuteScalarAsync();
-                    connection.Close();                   
+                    connection.Close();
                 }
             }
         }

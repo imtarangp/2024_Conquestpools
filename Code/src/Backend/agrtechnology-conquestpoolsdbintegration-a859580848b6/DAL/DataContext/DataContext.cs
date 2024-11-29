@@ -19,7 +19,7 @@ namespace DAL.DataContext
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderManufacturing> OrderManufacturings { get; set; }
         public virtual DbSet<OrderImageItems> OrderImageItems { get; set; }
-        
+
         //public virtual DbSet<OrderImageSignatureTbl> OrderImageSignatureTbl { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<DealerTbl> DealerTbl { get; set; }

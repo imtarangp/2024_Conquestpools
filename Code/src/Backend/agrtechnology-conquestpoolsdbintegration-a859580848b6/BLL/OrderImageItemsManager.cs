@@ -1,13 +1,12 @@
-﻿using DAL.DataContext;
+﻿using DAL.ADOService;
+using DAL.DataContext;
+using DAL.RequestDTO;
 using Dtos.Model;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
-using DAL.RequestDTO;
-using DAL.ADOService;
-using System.Collections.Generic;
-using DAL.Entities;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace BLL
 {
@@ -42,7 +41,7 @@ namespace BLL
                         var pQ = BuilQP("SP_UpdateImageItems", new List<ProcParams> {
                         new ProcParams{Name = "@OrderID", Val = id }
                     });
-                       await ScalarSpCommand(pQ.Query, pQ.Parameters);
+                        await ScalarSpCommand(pQ.Query, pQ.Parameters);
 
                     }
                     foreach (var req in lst)

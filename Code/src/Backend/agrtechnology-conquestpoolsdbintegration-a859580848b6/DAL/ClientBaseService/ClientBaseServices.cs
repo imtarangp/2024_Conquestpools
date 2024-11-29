@@ -40,13 +40,13 @@ namespace DAL
                         cmd.CommandText = i.Query.Split("@")[0].Replace("Exec ", "");
                         cmd.Parameters.AddRange(i.Parameters);
                         cmd.Transaction = trans;
-                       await cmd.ExecuteNonQueryAsync();
+                        await cmd.ExecuteNonQueryAsync();
                     }
                     trans.Commit();
                 }
                 catch (SqlException sqlError)
                 {
-                   await trans.RollbackAsync();
+                    await trans.RollbackAsync();
                     await trans.DisposeAsync();
                     return new ResponseModel
                     {
@@ -65,7 +65,7 @@ namespace DAL
         {
             using (SqlConnection connection = new SqlConnection(Setting.ConnectionString))
             {
-               await connection.OpenAsync();
+                await connection.OpenAsync();
                 using (SqlCommand command = new SqlCommand())
                 {
                     DataTable dt = new DataTable();

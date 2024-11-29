@@ -1,5 +1,4 @@
 ﻿using BLL;
-using BLL.OrderManager;
 using Dtos.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -25,7 +24,7 @@ namespace ConquestWebPortal.Controllers
                 {
                     _responseModel = new ResponseModel(false, "No User Exist", null);
                 }
-                else if (result.UserName == "Password") 
+                else if (result.UserName == "Password")
                 {
                     _responseModel = new ResponseModel(false, "Password Wrong!", null);
                 }

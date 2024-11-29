@@ -120,7 +120,7 @@ namespace DAL.RequestDTO
         public string OrderStatus { get; set; }
         public string DeclinedOrderInfo { get; set; }
         public string? EmployeeName { get; set; }
-        
+
         public DateTime? OrderCreatedDate { get; set; }
     }
     public class OrderSeacrhDTO

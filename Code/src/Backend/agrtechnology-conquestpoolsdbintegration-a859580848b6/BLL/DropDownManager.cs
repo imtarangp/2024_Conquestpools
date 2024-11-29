@@ -1,15 +1,12 @@
 ﻿using DAL.ADOService;
 using DAL.RequestDTO;
 using Dtos.Model;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class DropDownManager: ADOService
+    public class DropDownManager : ADOService
     {
         readonly LoggedInUser _LoggedInUser;
 
@@ -23,8 +20,9 @@ namespace BLL
         }
         public async Task<List<AccessoriesItemDTO>> GetAccessoriesItem()
         {
-            var pQ = BuilQP("USP_AccessoriesItem_Get", new List<ProcParams> {
-                    });
+            var pQ = BuilQP("USP_AccessoriesItem_Get", new List<ProcParams>
+            {
+            });
             return await ExecuteQueryCommandAsync<AccessoriesItemDTO>(pQ.Query, pQ.Parameters);
         }
         public async Task<List<BlanketRollerDTO>> GetBlanketRoller()

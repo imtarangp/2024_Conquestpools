@@ -1,14 +1,12 @@
 ﻿using DAL.ADOService;
 using DAL.DataContext;
+using DAL.RequestDTO;
 using Dtos.Model;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DAL.RequestDTO;
-using DAL.Entities;
-using Newtonsoft.Json;
-using System;
 
 namespace BLL.OrderManager
 {
