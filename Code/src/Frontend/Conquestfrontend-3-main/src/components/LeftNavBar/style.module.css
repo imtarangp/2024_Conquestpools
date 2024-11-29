@@ -1,0 +1,31 @@
+.left-navbar-wrapper {
+  background-color: #f7f3ff;
+  min-height: calc(100vh - 10rem);
+}
+.navbar-section-heading-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #fff;
+}
+.navbar-section-heading-title-wrapper {
+  /* background: #6200ff; */
+  background: #08467f;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.navbar-nav-item {
+  color: #08467f;
+  padding: 10px;
+  font-weight: 500;
+}
+.navbar-nav-item-active {
+  color: #fff;
+  padding: 10px;
+  font-weight: 500;
+}
+.nav-bar-item-active {
+  border-radius: 5px;
+  background: #2b6d9d;
+}

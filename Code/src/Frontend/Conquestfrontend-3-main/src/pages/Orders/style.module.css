@@ -1,0 +1,64 @@
+.modal-layout {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-wrapper {
+  /* height: 400px; */
+  max-height: 600px;
+  background-color: #fff;
+  overflow: auto;
+}
+.table-val {
+  font-family: Poppins-Regular;
+}
+.decline-reason-field {
+  width: 100%;
+  padding: 10px 15px;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+}
+.decline-reason-field-error {
+  width: 100%;
+  padding: 10px 15px;
+  border: solid 1px red;
+  border-radius: 10px;
+}
+.error-border {
+  border: solid 1px red !important;
+}
+.error-text {
+  font-size: 15px;
+  color: red;
+  margin-bottom: 5px;
+}
+.error-text-wrapper {
+  position: absolute;
+  bottom: -20px;
+}
+.page-button {
+  background-color: #08467f;
+  color: #fff;
+  margin-right: 10px;
+  width: 90px;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+}
+.resub-button {
+  background-color: #08467f;
+  color: #fff;
+  margin-right: 10px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.page-number {
+  margin-right: 10px;
+}

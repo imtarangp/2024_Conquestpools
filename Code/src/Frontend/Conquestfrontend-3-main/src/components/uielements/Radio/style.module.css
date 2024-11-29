@@ -1,0 +1,22 @@
+/* .input-wrapper input {
+  border: none;
+  width: 100%;
+}
+.input-wrapper input:focus {
+  border: none;
+  outline: none;
+}
+.input-wrapper {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+}
+.input-wrapper:focus-within {
+  border: solid 1px #7367f0;
+}
+.error-border {
+  border: solid 1px red !important;
+} */
+.error-text-wrapper {
+  position: absolute;
+  bottom: -20px;
+}

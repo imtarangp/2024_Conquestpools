@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../../../assets/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(../../../assets/fonts/Poppins-SemiBold.ttf);
+}
+.tile {
+  background-color: #6200ff;
+  margin-right: 10px;
+  width: 55px;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.preview-label-val {
+  font-family: Poppins-Regular;
+}
+.button {
+  width: 100px;
+  padding: 5px 0;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-family: Poppins-Regular;
+}
+.reset-button {
+  background-color: rgb(189, 181, 38);
+  font-family: Poppins-Regular;
+}

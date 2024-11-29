@@ -1,0 +1,35 @@
+﻿# **Global Exclusions**
+/.vs/
+*.suo
+*.user
+*.pdb
+*.cache
+*.log
+*.tmp
+*.otc
+/Backups
+
+
+# **.NET Project Exclusions**
+**/bin/
+**/obj/
+**/packages/
+**/.vs/
+*.suo
+*.user
+*.pdb
+*.cache
+*.log
+*.tmp
+*.otc
+
+# **React Project Exclusions**
+/node_modules/
+/build/
+/.cache/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*.lock

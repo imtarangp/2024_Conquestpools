@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../../../assets/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(../../../assets/fonts/Poppins-SemiBold.ttf);
+}
+.button {
+  width: 100px;
+  padding: 5px 0;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-family: Poppins-Regular;
+}
+.reset-button {
+  background-color: rgb(189, 181, 38);
+  font-family: Poppins-Regular;
+}
+.submit-button {
+  background-color: #08467f;
+  font-family: Poppins-Regular;
+}

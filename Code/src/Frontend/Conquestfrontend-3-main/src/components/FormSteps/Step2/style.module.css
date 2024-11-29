@@ -1,0 +1,45 @@
+.numeric-fields-grid {
+  width: auto;
+  display: inline-grid;
+}
+
+.numeric-fields-grid > div {
+  width: auto;
+  margin-right: 16px;
+}
+
+@media (min-width: 400px) {
+  .numeric-fields-grid {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .numeric-fields-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .numeric-fields-grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (min-width: 1800px) {
+  .numeric-fields-grid {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media (min-width: 2000px) {
+  .numeric-fields-grid {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
+
+@media (min-width: 2400px) {
+  .numeric-fields-grid {
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+}

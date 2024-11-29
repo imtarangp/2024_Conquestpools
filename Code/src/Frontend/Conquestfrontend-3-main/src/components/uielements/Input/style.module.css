@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+.field-label {
+  font-family: Poppins-Regular;
+}
+.input-wrapper input {
+  border: none;
+  width: 100%;
+  font-family: Poppins-Regular;
+}
+.input-wrapper input:focus {
+  /* border: none; */
+  outline: none;
+}
+.input-wrapper {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.input-wrapper:focus-within {
+  border: solid 1px #7367f0;
+}
+.error-border {
+  border: solid 1px red !important;
+}
+.error-text {
+  font-size: 13px;
+  color: red;
+}
+.error-text-wrapper {
+  position: absolute;
+  bottom: -20px;
+}

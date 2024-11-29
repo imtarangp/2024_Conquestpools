@@ -1,0 +1,21 @@
+.board-input-wrapper {
+  border: solid 2px #ccc;
+  /* width: 100px; */
+  height: 30px;
+  background-color: #c9e0f6;
+  padding: 0 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  /* margin-right: 10px; */
+}
+.board-input-wrapper input {
+  border: none;
+  max-width: 100%;
+  background: transparent;
+  /* color: #fff; */
+  font-size: 12px;
+  cursor: move;
+}
+.board-input-wrapper input:focus {
+  outline: none;
+}
