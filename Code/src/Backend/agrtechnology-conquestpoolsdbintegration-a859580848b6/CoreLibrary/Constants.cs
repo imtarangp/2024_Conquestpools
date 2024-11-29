@@ -2,6 +2,6 @@
 {
     public static class Constants
     {
-        public static string JwtSecret = "SCHOOLPROJECT123ABC";
+        public static string JwtSecret = "SCHOOLPROJECT123ABCAPIKEYVERYSECREAT";
     }
 }
