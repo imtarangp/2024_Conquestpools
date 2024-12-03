@@ -1,4 +1,4 @@
-import thunk from "redux-thunk";
+import {thunk} from "redux-thunk";
 import createDebounce from "redux-debounced";
 import logger from "redux-logger";
 import rootReducer from "./reducers/index";
