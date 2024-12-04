@@ -55,17 +55,18 @@ if (app.Environment.IsDevelopment())
 
 {
     app.UseDeveloperExceptionPage();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v2/swagger.json", "Conquest Web portal");
+    });
+
 }
 else
 {
     app.UseExceptionHandler("/Error");
 }
 
-app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v2/swagger.json", "Conquest Web portal");
-});
 
 app.UseStaticFiles();
 
